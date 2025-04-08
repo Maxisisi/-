@@ -1,0 +1,21 @@
+echo "Ingrese su nombre: "
+read nombre
+
+echo "======================"
+echo "Bienvenido, $nombre, este es el menú de opciones: "
+echo "|--OPCIÓN 1--| Información básica del sistema" #uname -a
+echo "|--OPCIÓN 2--| Liste los 5 procesos que consumen más memoria" #ps aux --sort=-%mem | head -n 6
+echo "|--OPCIÓN 3--| Verifique el espacio libre en disco" #def -h /
+echo "======================"
+echo "Escoja una opción: "
+read opcion
+
+case $opcion in
+	1)echo "Información básica del sistema"
+		uname -a;;
+	2)echo "Lista de los 5 procesos que consumen más memoria"
+		ps aux --sort=-%mem | head -n 6;;
+	3)echo "Ver espacio libre en disco"
+		df -h /;;
+	*)echo "No ingresó una opción válida......saliendo";;
+esac
