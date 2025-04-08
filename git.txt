@@ -1,1 +1,34 @@
-Github
+  Iniciar repositorio con nombre y mail, confirmar con git config --list.
+git config --global user.name "Maximiliano-Mateluna"
+git config --global user.email "max.mateluna@duocuc.cl"
+git config --list
+  Crear directorio de trabajo e iniciarlo como repositorio local, confirmar con git status.
+mkdir Trabajo
+cd Trabajo
+git init
+git status
+  Crear archivo de texto. Con comando git ejecute el archivo y muostrar con git status.
+nano Archivo.txt
+git add Archivo.txt
+git status
+  Confirmar archivo para que git rastree los cambios y agregue un mensaje. Mostrar historial.
+git commit -m "Mensaje 1"
+git log
+  Hacer modificaciones, ejecutar y confirmar. Mostrar logs de cambios.
+nano Archivo.txt
+git diff
+git add Archivo.txt
+git commit -m "Mensaje 2"
+git log
+  Crear nuevo Branch, verificar creación, cambiar a esa rama y verificar.
+git brach nuevo_branch
+git branch
+git checkout nuevo_branch
+git branch
+  Hacer cambio, ejecutar y confirmar. Mostrar logs de cambio. (crear repo antes)
+nano Archivo.txt
+git add Archivo.txt
+git commit -m "Mensaje 3"
+git log
+git remote add origin https...
+git push -u origin nuevo_branch
