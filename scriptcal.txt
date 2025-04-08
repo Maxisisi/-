@@ -1,0 +1,31 @@
+opcion = 0
+while opcion !=5:
+    print("1-------SUMAR")
+    print("2-------RESTAR")
+    print("3-------MULTIPLICAR")
+    print("4-------DIVIDIR")
+    print("5-------SALIR")
+    opcion = int(input("Ingrese su opción: "))
+
+    if opcion == 1:
+        n1 = float(input("Ingrese el primer número: "))
+        n2 = float(input("Ingrese el segundo número: "))
+        resultado = n1 + n2
+        print("La suma es: ", resultado)
+    elif opcion == 2:
+        n1 = float(input("Ingrese el primer número: "))
+        n2 = float(input("Ingrese el segundo número: "))
+        resultado = n1 - n2
+        print("La resta es: ",resultado)
+    elif opcion == 3:
+        n1 = float(input("Ingrese el primer número: "))
+        n2 = float(input("Ingrese el segundo número: "))
+        resultado = n1 * n2
+        print("La multiplicación es: ",resultado)
+    elif opcion == 4:
+        n1 = float(input("Ingrese el primer número: "))
+        n2 = float(input("Ingrese el segundo número: "))
+        resultado = n1 / n2
+        print("La división es: ",resultado)
+
+print("Adiós...")
