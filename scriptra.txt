@@ -1,0 +1,11 @@
+pi = 3.141592
+
+def calcular_circunferencia(radio):
+    circunferencia = 2 * pi * radio
+    return circunferencia
+
+radios = [3, 8, 10]
+
+for radio in radios:
+    circunferencia = calcular_circunferencia(radio)
+    print(f"Para un radio de {radio}, la circunferencia es: {circunferencia:.6f}")
